@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+posts
+{% endblock %}
+
+{% block header_references %}
+    <link rel="stylesheet" href="{% static 'posts.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="posts_father">
+    <div class="posts_father_posts">
+        {% include 'includes/single_post.html' %}
+    </div>
+    <div class="posts_father_members">
+        {% include 'includes/single_member.html' %}
+    </div>
+
+</div>
+
+{% endblock content %}

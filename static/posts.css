@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+.posts_father{
+    display: flex;
+    justify-content: center;
+}
+.posts_father_posts{
+    width: 80%;
+}
+.posts_father_members{
+    width: 20%;
+}

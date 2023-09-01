@@ -1,0 +1,29 @@
+{% load static %}
+
+<style>
+    .single_member_father {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: darkolivegreen;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 15px;
+
+    }
+
+    .single_member_img {
+        border-radius: 50%;
+        height: 50px;
+    }
+
+    .single_member_name {
+        color: white;
+    }
+</style>
+
+<div class="single_member_father">
+    <p class="single_member_name">Akbar Beiramzadeh</p>
+    <img src="{% static 'images/akbar.png' %}" alt="" class="single_member_img">
+
+</div>

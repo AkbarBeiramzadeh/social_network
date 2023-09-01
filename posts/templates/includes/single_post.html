@@ -1,0 +1,99 @@
+{% load static %}
+<style>
+    .single_post_father {
+        display: flex;
+        background-color: black;
+        justify-content: flex-start;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .single_post_left {
+        display: flex;
+        width: 180px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single_post_line {
+        width: 2px;
+        background-color: coral;
+        margin-left: 5px;
+    }
+
+    .single_post_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .single_post_img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-top: 3px;
+    }
+
+    .single_post_name {
+        color: white;
+        margin-top: 15px;
+        padding: 5px;
+    }
+
+    .single_post_age {
+        color: white;
+        margin-top: 15px;
+    }
+
+    .single_post_right_up {
+        display: flex;
+        justify-content: center;
+    }
+    .single_post_right_up_text{
+        margin: 5px;
+        color: white;
+        text-decoration: none;
+    }
+    .single_post_right_down{
+        display: flex;
+        background-color: #867b8c;
+        height: 10%;
+        padding: 10px;
+        border-bottom-right-radius: 10px;
+        justify-content: space-between;
+    }
+    .single_post_right_down a{
+     text-decoration: none;
+    }
+
+</style>
+
+
+<div class="single_post_father">
+    <div class="single_post_left">
+        <img src="{% static 'images/akbar.png' %}" alt="" class="single_post_img">
+        <p class="single_post_name">Akbar Beiramzadeh</p>
+        <p class="single_post_age">Age : 35</p>
+    </div>
+
+    <div class="single_post_line"></div>
+
+    <div class="single_post_right">
+        <div class="single_post_right_up">
+            <a class="single_post_right_up_text" href="#">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab amet, asperiores dicta doloremque
+                        dolorum
+                        eum exercitationem facilis harum, impedit ipsam iure iusto laborum maxime modi molestiae mollitia
+                        necessitatibus nisi non optio perferendis placeat quaerat qui quia, recusandae repellendus sed suscipit
+                        voluptas voluptate voluptatum! Doloribus necessitatibus optio reprehenderit saepe? Accusantium aliquid
+                        asperiores autem delectus eligendi optio quidem quod vel vitae
+            </a>
+        </div>
+        <div class="single_post_right_down">
+            <p class="single_post_right_down_date">2000-05-20</p>
+            <a href="#" class="single_post_right_down_comment">Comments</a>
+            <a href="#" class="single_post_right_down_like">Likes</a>
+            <a href="#" class="single_post_right_down_dislike">DisLikes</a>
+        </div>
+    </div>
+</div>
